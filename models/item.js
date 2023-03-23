@@ -8,22 +8,18 @@ const Item=sequelize.define('items',{
         allowNull:false,
         primaryKey:true
     },
-    item:{
-        type:Sequelize.STRING,
-        allowNull:false
-    },
-    description:{
-        type:Sequelize.STRING,
-        allowNull:false
-    },
     price:{
         type:Sequelize.INTEGER,
         allowNull:false
     },
-    quantity:{
+    dish:{
+        type:Sequelize.STRING,
+        allowNull:false
+    },
+    tables:{
         type:Sequelize.INTEGER,
         allowNull:false
-    }
+    },
 })
 
 module.exports=Item;

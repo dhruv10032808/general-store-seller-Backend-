@@ -7,10 +7,10 @@ const app=express();
 app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}))
-
 app.use(ItemRoutes);
 
 sequelize.sync().then(()=>{
     app.listen(3000)
 })
 .catch(err=>console.log(err));
+

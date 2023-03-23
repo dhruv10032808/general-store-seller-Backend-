@@ -4,6 +4,6 @@ const router=express.Router();
 
 router.use('/add-item',ItemController.postItem)
 router.use('/get-item',ItemController.getItem)
-router.use('/edit-item/:userId',ItemController.editItem)
+router.use('/delete-item/:userId',ItemController.deleteItem)
 
 module.exports=router;
